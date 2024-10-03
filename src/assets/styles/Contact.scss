@@ -21,11 +21,17 @@
   fieldset {
     background-color: white;
   }
+
+  input, textarea {
+    color: #000; /* Ensures the text inside the inputs is visible */
+    border: 1px solid #ccc; /* Adds a visible border to input fields */
+  }
 }
 
 label {
   font-size: 1.2rem;
   font-family: 'DomaineDispNar-Medium', sans-serif;
+  color: #000; /* Ensures label text is visible */
 }
 
 .form-flex {
