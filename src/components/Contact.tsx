@@ -7,7 +7,6 @@ import SendIcon from '@mui/icons-material/Send';
 import TextField from '@mui/material/TextField';
 
 function Contact() {
-
   const [name, setName] = useState<string>('');
   const [email, setEmail] = useState<string>('');
   const [message, setMessage] = useState<string>('');
@@ -69,11 +68,15 @@ function Contact() {
                 label="Your Name"
                 placeholder="What's your name?"
                 value={name}
-                onChange={(e) => {
-                  setName(e.target.value);
-                }}
+                onChange={(e) => setName(e.target.value)}
                 error={nameError}
                 helperText={nameError ? "Please enter your name" : ""}
+                sx={{
+                  input: { color: 'black' }, // Ensure input text is visible
+                }}
+                InputLabelProps={{
+                  style: { color: '#000' }, // Label color
+                }}
               />
               <TextField
                 required
@@ -81,11 +84,15 @@ function Contact() {
                 label="Email / Phone"
                 placeholder="How can I reach you?"
                 value={email}
-                onChange={(e) => {
-                  setEmail(e.target.value);
-                }}
+                onChange={(e) => setEmail(e.target.value)}
                 error={emailError}
                 helperText={emailError ? "Please enter your email or phone number" : ""}
+                sx={{
+                  input: { color: 'black' }, // Ensure input text is visible
+                }}
+                InputLabelProps={{
+                  style: { color: '#000' }, // Label color
+                }}
               />
             </div>
             <TextField
@@ -97,11 +104,15 @@ function Contact() {
               rows={10}
               className="body-form"
               value={message}
-              onChange={(e) => {
-                setMessage(e.target.value);
-              }}
+              onChange={(e) => setMessage(e.target.value)}
               error={messageError}
               helperText={messageError ? "Please enter the message" : ""}
+              sx={{
+                textarea: { color: 'black' }, // Ensure textarea text is visible
+              }}
+              InputLabelProps={{
+                style: { color: '#000' }, // Label color
+              }}
             />
             <Button variant="contained" endIcon={<SendIcon />} onClick={sendEmail}>
               Send
