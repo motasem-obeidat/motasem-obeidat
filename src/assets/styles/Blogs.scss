@@ -1,17 +1,17 @@
-.projects-container {
+.blogs-container {
     display: flex;
     flex-direction: column;
     padding: 5% 10%;
     text-align: left;
 }
   
-.projects-container .projects-grid {
+.blogs-container .blogs-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 50px;
 }
   
-.projects-container .projects-grid .project {
+.blogs-container .blogs-grid .project {
     text-align: left;
 }
   
@@ -32,17 +32,17 @@
 
 @media screen {
     @media (max-width: 700px) {
-        .projects-container {
+        .blogs-container {
             display: block;
             padding-left: 5%;
             padding-right: 5%;
         }
   
-        .projects-container .projects-grid {
+        .blogs-container .blogs-grid {
             display: block;
         }
       
-        .projects-container .projects-grid .project {
+        .blogs-container .blogs-grid .project {
             padding-bottom: 5%;
         }
     }
