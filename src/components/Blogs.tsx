@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from '../assets/images/postgresql.png';
-import '../assets/styles/Project.scss';
+import '../assets/styles/Blogs.scss';
 
 function Blogs() {
     return(
