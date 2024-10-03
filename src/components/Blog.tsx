@@ -5,7 +5,7 @@ import '../assets/styles/Blog.scss';  // Using the new Blog.scss
 function Blog() {
     return(
     <div className="blogs-container" id="blogs">
-        <h1>Personal Blogs</h1>
+        <h1>Publications</h1>
         <div className="blogs-grid">
             <div className="blog">
                 <a href="https://github.com/motasem-obeidat/CS505-PostgreSQL-Blog" target="_blank" rel="noreferrer">
