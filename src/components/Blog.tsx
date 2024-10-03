@@ -1,25 +1,24 @@
-import React from 'react';
+import React from "react";
+import img1 from '../assets/images/postgresql.png';
+import '../assets/styles/Project.scss';  // Reusing Project styles
 
 function Blog() {
-  return (
-    <section id="blogs" className="blog-section">
-      <h2>Blogs</h2>
-      <div className="blog-list">
-        <div className="blog-item">
-          <h3>Blog Post 1</h3>
-          <p>Description of blog post 1.</p>
+    return(
+    <div className="blogs-container" id="blogs">
+        <h1>Personal Blogs</h1>
+        <div className="blogs-grid">
+            <div className="blog">
+                <a href="https://github.com/motasem-obeidat/CS505-PostgreSQL-Blog" target="_blank" rel="noreferrer">
+                    <img src={img1} className="zoom" alt="thumbnail" width="100%"/>
+                </a>
+                <a href="https://github.com/motasem-obeidat/CS505-PostgreSQL-Blog" target="_blank" rel="noreferrer">
+                    <h2>PostgreSQL Benchmarking</h2>
+                </a>
+                <p>Focus on evaluating PostgreSQL's performance using the TPC-H benchmark.</p>
+            </div>
         </div>
-        <div className="blog-item">
-          <h3>Blog Post 2</h3>
-          <p>Description of blog post 2.</p>
-        </div>
-        <div className="blog-item">
-          <h3>Blog Post 3</h3>
-          <p>Description of blog post 3.</p>
-        </div>
-      </div>
-    </section>
-  );
+    </div>
+    );
 }
 
 export default Blog;
