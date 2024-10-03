@@ -11,11 +11,11 @@
     grid-gap: 50px;
 }
   
-.blogs-container .blogs-grid .project {
+.blogs-container .blogs-grid .blog {
     text-align: left;
 }
   
-.project h2:hover {
+.blog h2:hover {
     text-decoration: underline;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
@@ -42,7 +42,7 @@
             display: block;
         }
       
-        .blogs-container .blogs-grid .project {
+        .blogs-container .blogs-grid .blog {
             padding-bottom: 5%;
         }
     }
