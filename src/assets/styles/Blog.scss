@@ -30,6 +30,12 @@
     transform: scale(1.05);
 }
 
+h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 @media screen {
     @media (max-width: 700px) {
         .blogs-container {
