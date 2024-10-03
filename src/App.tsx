@@ -34,8 +34,8 @@ function App() {
             <Main/>
             <Expertise/>
             <Timeline/>
-            <Project/>
             <Blog/>
+            <Project/>
             <Contact/>
         </FadeIn>
         <Footer />
