@@ -1,6 +1,6 @@
 import React from "react";
 import img1 from '../assets/images/postgresql.png';
-import '../assets/styles/Project.scss';  // Reusing Project styles
+import '../assets/styles/Blog.scss';  // Using the new Blog.scss
 
 function Blog() {
     return(
